@@ -41,6 +41,7 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatRippleModule} from '@angular/material/core';
 import {MatTreeModule} from '@angular/material/tree';
+import {MatDialogModule} from '@angular/material/dialog';
   
 
 
@@ -108,6 +109,7 @@ import {MatTreeModule} from '@angular/material/tree';
      MatToolbarModule,
      MatTooltipModule,
      MatTreeModule,
+     MatDialogModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
