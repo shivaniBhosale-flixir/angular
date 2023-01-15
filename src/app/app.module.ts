@@ -42,6 +42,7 @@ import {MatNativeDateModule} from '@angular/material/core';
 import {MatRippleModule} from '@angular/material/core';
 import {MatTreeModule} from '@angular/material/tree';
 import {MatDialogModule} from '@angular/material/dialog';
+import { PopupEditProfileComponent } from './popup-edit-profile/popup-edit-profile.component';
   
 
 
@@ -49,7 +50,8 @@ import {MatDialogModule} from '@angular/material/dialog';
   declarations: [
     AppComponent,
     DashboardComponent,
-    HeaderComponent
+    HeaderComponent,
+    PopupEditProfileComponent,
   ],
   imports: [
     BrowserModule,
@@ -112,6 +114,8 @@ import {MatDialogModule} from '@angular/material/dialog';
      MatDialogModule 
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [PopupEditProfileComponent],
+  
 })
 export class AppModule { }

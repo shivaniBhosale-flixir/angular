@@ -7,6 +7,7 @@ import {
 } from "@angular/forms";
 import { MatDialog, MatDialogRef, MatDialogConfig,MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { HttpErrorResponse } from "@angular/common/http";
+import { PopupEditProfileComponent } from "../popup-edit-profile/popup-edit-profile.component";
 
 @Component({
   selector: 'app-dashboard',
@@ -26,5 +27,15 @@ export class DashboardComponent {
       "searchRole": new FormControl(''),
     });
 
+  }
+  openEditProfilePopUp() {
+    const dialogRef3 = this.dialog.open(PopupEditProfileComponent, {
+      // width: "73%",
+      // height: "65%", 
+    });
+
+    dialogRef3.afterClosed().subscribe((result) => {
+      this.ngOnInit();
+    });
   }
 }

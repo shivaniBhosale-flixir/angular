@@ -6,8 +6,8 @@
 {
     max-height: 3.5rem;
     min-height: 3.5rem;
-    max-width:10rem;
-    min-width: 10rem;
+    max-width:15rem;
+    min-width: 15rem;
 }
 .welcome-text{
     font-family: "Manrope", sans-serif;
@@ -74,3 +74,17 @@ i
 .app-search form mat-select option{
 	font-family: 'sf_reg';
 }
+.brown
+  {
+    color: #A52A2A;
+  }
+  .example-full-width
+  {
+    width: 100%;
+  }
+  .btn
+  {
+    background-color: #A52A2A !important;
+    color: white !important;
+    font-size: 1rem !important;
+  }
